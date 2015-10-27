@@ -1,1 +1,1 @@
-### Assignment work from the FUll Stack JavaScript Accelerator
+### Assignment work from the Full Stack JavaScript Accelerator
