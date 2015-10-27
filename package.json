@@ -1,0 +1,17 @@
+{
+  "name": "json_and_gulp",
+  "version": "0.1.0",
+  "description": "cool app",
+  "main": "index.js",
+  "scripts": {
+    "test": "./node_modules/mocha/bin/mocha molly_kent/test",
+    "start": "echo 'hello world'",
+    "custom": "echo 'custom'"
+  },
+  "author": "kent.molly@gmail.com",
+  "license": "MIT",
+  "devDependencies": {
+    "chai": "^3.4.0",
+    "mocha": "^2.3.3"
+  }
+}
