@@ -1,5 +1,6 @@
 var gulp = require('gulp');
 var jshint = require('gulp-jshint');
+var mocha = require('gulp-mocha');
 var appFiles = ['gulp/index.js', 'gulp/lib/**/*.js'];
 var testFiles = ['gulp/test/**/*.js'];
 
@@ -25,5 +26,10 @@ gulp.task('jshint:app', function() {
     .pipe(jshint.reporter('default'));
 });
 
+gulp.task('mocha:test', function () {
+  return gulp.src(testFiles, {read: false})
+    .pipe(mocha({reporter: 'nyan'}));
+});
+
 gulp.task('jshint', ['jshint:test', 'jshint:app']);
-gulp.task('default', ['jshint']);
+gulp.task('default', ['jshint', 'mocha:test']);

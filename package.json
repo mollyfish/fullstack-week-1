@@ -4,7 +4,7 @@
   "description": "cool app",
   "main": "index.js",
   "scripts": {
-    "test": "./node_modules/mocha/bin/mocha gulp/test",
+    "test": "gulp",
     "start": "echo 'hello world'",
     "custom": "echo 'custom'"
   },
